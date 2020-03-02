@@ -1,0 +1,21 @@
+{
+  "name": "perf-xapi",
+  "version": "1.0.0",
+  "description": "Service that merge cats and pokemon info",
+  "main": "index.js",
+  "scripts": {
+    "start:micro": "micro ./src/index.js",
+    "start:fastify": "node ./src/fast-index.js",
+    "start:express": "node ./src/express-index.js",
+    "start:koa": "node ./src/koa-index.js"
+  },
+  "author": "Santiago Sanchez Taborda <santiago.sanchez.t@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "fastify": "^2.12.1",
+    "koa": "^2.11.0",
+    "micro": "^9.3.4",
+    "node-fetch": "^2.6.0"
+  }
+}
