@@ -11,7 +11,7 @@ fastify.get('/', async (request, reply) => {
   const fetcherPokemon = fetcher(`https://pokeapi.co/api/v2/pokemon?offset=${getRandomOffset()}&limit=100`);
   const response = await Promise.all([fetcherCats, fetcherPokemon]);
 
-	return { cats: response[0].data, pokemon: response[1].data.results};
+  return { cats: response[0], pokemons: response[1].results };
 })
 
 const start = async () => {

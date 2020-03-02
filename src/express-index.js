@@ -11,7 +11,7 @@ app.get('/', async (req, res) => {
   const fetcherPokemon = fetcher(`https://pokeapi.co/api/v2/pokemon?offset=${getRandomOffset()}&limit=100`);
   const response = await Promise.all([fetcherCats, fetcherPokemon]);
 
-	return res.json({ cats: response[0].data, pokemon: response[1].data.results});
+	return res.json({ cats: response[0], pokemons: response[1].results });
 })
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
