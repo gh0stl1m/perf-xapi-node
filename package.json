@@ -13,7 +13,7 @@
   "license": "MIT",
   "dependencies": {
     "express": "^4.17.1",
-    "fastify": "^2.12.1",
+    "fastify": "^2.15.1",
     "koa": "^2.11.0",
     "micro": "^9.3.4",
     "node-fetch": "^2.6.0"
